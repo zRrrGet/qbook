@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>assets/emptyScene.jpg</file>
+        <file>assets/freeSeat.jpg</file>
+        <file>assets/occupiedSeat.jpg</file>
+    </qresource>
+</RCC>
