@@ -7,9 +7,6 @@
 #include <QDebug>
 #include <QResizeEvent>
 
-#define occupiedpm ":\\assets\\freeSeat.jpg" // дефайны путей для картинок со свободным и занятым местами
-#define freepm ":\\assets\\occupiedSeat.jpg"
-
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -28,7 +25,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     // Устанавливаем сцену(RecordScene - наследник QGraphicsScene с модицифорованными полями, определение в RecordScene.h)
     ui->bookView->setScene(new RecordScene(new QGraphicsScene(), username));
-    ui->bookView->scene()->addPixmap(QPixmap(":\\assets\\emptyScene.jpg")); // ставим задний фон
+    ui->bookView->scene()->addPixmap(QPixmap(":/assets/emptyScene.jpg")); // ставим задний фон
 
 
     setWindowTitle("Добро пожаловать, "+username);
@@ -50,8 +47,6 @@ MainWindow::MainWindow(QWidget *parent)
 
 }
 
-
-
 MainWindow::~MainWindow()
 {
     delete ui;
@@ -61,7 +56,6 @@ void MainWindow::resizeEvent(QResizeEvent *event)
 {
     // Данная функция вызывается каждый раз, когда меняется размер окна. Подгоняет размер сцены под view
     ui->bookView->fitInView(ui->bookView->scene()->sceneRect(), Qt::KeepAspectRatio);
-    delete event;
 }
 
 void MainWindow::on_bookTime_userTimeChanged(const QTime &time)

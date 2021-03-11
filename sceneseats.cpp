@@ -9,8 +9,8 @@
 #include <QTextStream>
 #include <QFile>
 
-#define freepm ":\\assets\\freeSeat.jpg"
-#define occupiedpm ":\\assets\\occupiedSeat.jpg"
+#define freepm ":/assets/freeSeat.jpg"
+#define occupiedpm ":/assets/occupiedSeat.jpg"
 
 SceneSeats::SceneSeats(QGraphicsView *view, QCalendarWidget *currentDate, QTimeEdit *currentTime) :
     v(view), currentDate(currentDate), currentTime(currentTime) {

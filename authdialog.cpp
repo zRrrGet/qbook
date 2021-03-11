@@ -22,7 +22,7 @@ void AuthDialog::on_OKButton_clicked()
 {
     if (ui->loginEdit->text()=="") ui->loginEdit->setFocus();
     else if (ui->passEdit->text()=="") ui->passEdit->setFocus();
-        else {
+    else {
 
         // открываем иник(формат "login=password")
         QSettings userData("users.ini", QSettings::IniFormat);
