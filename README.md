@@ -8,6 +8,7 @@ Application for booking seats in office
 # How to run
 Simply proceed with the Qt Creator:
 File->New File or Project->Import Project->Git clone->Repository: https://github.com/zRrrGet/qbook.git
+
 Or you can build it manually with qmake
 
 # Usage
