@@ -2,7 +2,7 @@
 Application for booking seats in office
 
 # Dependencies
-- Windows and Linux both acceptable
+- Windows and Linux are both acceptable
 - Qt 5.15.2+
 - GCC 10.2.0+
 
